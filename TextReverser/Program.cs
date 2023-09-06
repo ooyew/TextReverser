@@ -1,9 +1,12 @@
+using Microsoft.EntityFrameworkCore;
+using TextReverser.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<RequestAPIDbContext>(options => options.UseInMemoryDatabase("RequestDB"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
