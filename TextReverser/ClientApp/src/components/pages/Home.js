@@ -16,7 +16,7 @@ const Home = () => {
             body: JSON.stringify({
                 "input": data
             }),
-            headers: { 'Content-type': 'application/json; charset=UTF-8' }
+            headers: { 'Content-type': 'application/json' }
         });
         const temp = await response.text();
         setResult(temp);
@@ -42,7 +42,7 @@ const Home = () => {
                 <br />
                 <input type="button" onClick={handleGetAll} value="Show All"></input>
                 {list &&
-                    <table>
+                    <table className="table">
                         <thead>
                             <tr>
                                 <th>Input</th>
