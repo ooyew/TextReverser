@@ -5,8 +5,8 @@ const target = env.ASPNETCORE_HTTPS_PORT ? `https://localhost:${env.ASPNETCORE_H
   env.ASPNETCORE_URLS ? env.ASPNETCORE_URLS.split(';')[0] : 'http://localhost:45606';
 
 const context =  [
-/*    "/weatherforecast",*/
-    "/api/v1/home",
+    "/api/v1/home/reversedInput",
+    "/api/v1/home/getAllInput",
 ];
 
 module.exports = function(app) {

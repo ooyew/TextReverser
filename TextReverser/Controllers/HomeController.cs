@@ -18,6 +18,7 @@ namespace TextReverser.Controllers
         }
 
         [HttpPost]
+        [Route("reversedInput")]
         public IActionResult SaveInput(RequestDTO requestDTO)
         {
             try
@@ -47,6 +48,7 @@ namespace TextReverser.Controllers
         }
 
         [HttpGet]
+        [Route("getAllInput")]
         public IActionResult ViewInput()
         {
             return Ok(_dbContext.Requests.ToList());
