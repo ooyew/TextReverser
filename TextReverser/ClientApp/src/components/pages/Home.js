@@ -46,7 +46,7 @@ const Home = () => {
                         <thead>
                             <tr>
                                 <th>Input</th>
-                                <th>ReversedInput</th>
+                                <th>Reversed Input</th>
                             </tr>
                         </thead>
                         <tbody>
